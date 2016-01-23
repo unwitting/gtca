@@ -6,6 +6,14 @@ Ghost themes which support __GTCA__ provide an easy-to-use method of configuring
 ## Motivation
 See the [original blog post](http://unwttng.com/introducing-gtca-make-your-ghost-themes-super-configurable/) for the rationale behind this and a more in-depth discussion.
 
+## The spec
+Is simple. Your theme must meet a few requirements to be able to claim adherance to __GTCA__:
+
+* `window.__themeCfg = {};` must exist somewhere in the code (or some functionally equivalent code that makes sure an empty `__themeCfg` object is assigned to the global scope).
+* The above initialisation must come strictly before `{{ghost_head}}`. This allows configuration via header code injection.
+* For any supported configuration property, document clearly to the user (either via their console logs, or in your theme help files) how to enable / set each one. This must assume little technical experience.
+* You mustn't make use of properties which aren't in the [list](#gtca-configuration-properties) below. Using non-standard properties fools your users into thinking they're getting more interoperability between themes than they really are. If you need properties that aren't on the list yet, please raise a PR and it'll almost certainly be added nice and easily.
+
 ## GTCA configuration properties
 Here's the current list of supportable __GTCA__ properties. To get more added, raise a PR against this README! The point isn't for me to control the list, it's for there to _be_ a list. Further social profiles, extra external integrations are all welcome. We just need to ensure that the configuration item/s allow for the full functionality to be achieved.
 
