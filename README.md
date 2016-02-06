@@ -61,3 +61,6 @@ Here's the current list of supportable __GTCA__ properties. To get more added, r
 
 ### Commenting
 * `__themeCfg.disqusUsername`
+
+### Publishing
+* `__themeCfg.alternateSubscribeLink` - defines an alternative to the built-in RSS link (ex: [Feedburner](http://feedburner.google.com/) feed)
