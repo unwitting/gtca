@@ -9,26 +9,11 @@ See the [original blog post](http://unwttng.com/introducing-gtca-make-your-ghost
 ## My theme supports GTCA!
 You're a star. You should include something either in your theme or your theme's download page that tells people it's a __GTCA__ theme. This helps popularise the standard and allows interested blog admins to find out more.
 
-Something like the following button works fine:
+An easy way to do this is to use a shields.io badge: [![gtca button](https://img.shields.io/badge/configured%20with-GTCA-brightgreen.svg)](https://github.com/unwitting/gtca)
 
-```html
-<a
-   href="https://github.com/unwitting/gtca"
-   target="_blank"
-   style="
-     text-decoration: none;
-     color: inherit;
-     padding: 0.15em 0.25em;
-     box-sizing: border-box;
-     display: inline-block;
-     border: 1px solid currentColor;
-     border-radius: 0.25em;
-   ">
-  This theme supports <b>GTCA</b> configuration
-</a>
+```markdown
+[![gtca button](https://img.shields.io/badge/configured%20with-GTCA-brightgreen.svg)](https://github.com/unwitting/gtca)
 ```
-
-![](https://dl.dropboxusercontent.com/s/xjd3f78y4fu66nc/Screenshot%202016-01-23%2011.08.42.png)
 
 ## The spec
 Is simple. Your theme must meet a few requirements to be able to claim adherance to __GTCA__:
